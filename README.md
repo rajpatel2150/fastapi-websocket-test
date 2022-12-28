@@ -1,1 +1,3 @@
-# fastapi-websocket-test
+# chatserver
+
+this is a websocket implementation using fast api .
