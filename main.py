@@ -5,9 +5,9 @@ from fastapi.responses import HTMLResponse
 
 app = FastAPI()
 
-html = """
 
-"""
+with open('index.html', 'r') as f:
+    html = f.read()
 
 
 class ConnectionManager:
@@ -30,10 +30,6 @@ class ConnectionManager:
 
 
 manager = ConnectionManager()
-
-html = ""
-with open('index.html', 'r') as f:
-    html = f.read()
 
 
 @app.get("/")
